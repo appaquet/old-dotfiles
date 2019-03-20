@@ -1,48 +1,70 @@
 # appaquet's dotfiles
 New version of my old [dotfiles](https://github.com/appaquet/app-vim)
 
-## Setup
+## Shell & editor setup
+* Checkout this repo recursively in your home
+  * `git clone --recursive https://github.com/appaquet/dotfiles.git` ~/dotfiles
+  * Symlink bin folder `ln -s ~/dotfiles/bin ~/bin`
+
 * Fish shell
   * To install
     * Ubuntu: `sudo apt install fish`
-    * MacOS: `brew install fish`
-  * Change shell (you may have to add to [`/etc/sheels`](https://stackoverflow.com/questions/453236/how-to-set-my-default-shell-on-mac))
+    * MacOS: `brew install fish` and follow instructions about `/etc/shells`
+  * Change shell
     * Ubuntu: `chsh -s /usr/bin/fish`
     * MacOS: `chsh -s /usr/local/bin/fish`
-  * Symlink config folder: `ln -s ~/dotfiles/fish/config.fish ~/.config/fish/`
-  * Log out and log back
+  * Symlink fish's config folder: `mkdir -p ~/.config/fish/ && ln -s ~/dotfiles/fish/config.fish ~/.config/fish/`
+  * Log out and log back (you'll get errors as not everyhing is setuped yet)
   * Install oh-my-fish framework
     * `curl -L https://get.oh-my.fish | fish`
-  * Install plugins
-    * `foreing-env` / `fenv` to import ~/.profile variables: `omf install foreign-env`
+  * Install plugins & themes
+    * `foreign-env` / `fenv` to import ~/.profile variables: `omf install foreign-env`
+    * `bobthefish` theme: `omf install bobthefish` and then `omf theme bobthefish`
 
-* fzf (shell fuzzing file finder / history finder)
+  * **Notes**
+    * You can still use your `~/.profile` as you would do in bash thanks to the `foreign-env` plugin that sources your `~/.profile`
+    * You can put any local specifc fish config in `~/.config/fish/local.fish`
+
+* [fzf](https://github.com/junegunn/fzf) (shell fuzzing file finder / history finder)
   * To install
     * `cd ./fzf && ./install`
-
-* Powerline
-  * `pip install powerline-status`
-  * [Install patched fonts](https://powerline.readthedocs.io/en/latest/installation/linux.html#fonts-installation)
-    * [For ubuntu](https://github.com/powerline/fonts)
-      * `sudo apt install fonts-powerline`
-    * For MacOS
-      * **TODO**
 
 * Neovim
    * To install, see https://github.com/neovim/neovim/wiki/Installing-Neovim
      * Make sure to update alternatives on Ubuntu
+     * On MacOS, you may need to install [python neovim](https://ricostacruz.com/til/neovim-with-python-on-osx): `pip3 install neovim --upgrade`
    * Symlink config folder: `ln -s ~/dotfiles/nvim ~/.config/nvim`
-   * Install plugins `vim +BundleInstall +qall`
+   * Install plugins `nvim +BundleInstall +qall`
    * Finish YouCompleteMe plugin installation
      * `cd /home/appaquet/.vim/bundle/YouCompleteMe`
      * `./install.py`
 
 * Tmux
-   * Symlink tmux conf: `ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
+   * Symlink tmux conf: `ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf`
+   * Create empty local conf: `touch ~/.tmux.conf.local`
+
+  * **Notes**
+    * You can put any local specifc fish config in `~/.tmux.conf.local`
+
+* [Autojump](https://github.com/wting/autojump) (Fast jumping to directories)
+  * To install
+    * Ubuntu: `sudo apt install autojump`
+    * MacOS: `brew install autojump`
+  * You can add the bootstrap script to your `~/.config/fish/local.fish`
+    * MacOS: `[ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish`
+    * Ubuntu: `[ -f /usr/share/autojump/autojump.fish ]; and source /usr/share/autojump/autojump.fish`
+
+* [RipGrep](https://github.com/BurntSushi/ripgrep) (A very fast grep / ack replacement)
+  * To install
+    * Ubuntu: `sudo apt install ripgrep`
+    * MacOS: `snap install --classic ripgrep`
+
+## Languages setup
+* [Rust](rust.md)
 
 ## Usage
 ### Neovim
-* My leader key is bound to backslash
+* My leader key is bound to `\` (backslash)
 
 * Useful custom commands
   * `E` or `New` to create a new file in the directory as the current buffer's file
@@ -68,9 +90,8 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
 
 * You can check [`init.vim`](nvim/init.vim) for more commands / mappings
 
-### fzf
-* Fuzzy finder in shell
-* Usage:
+### fzf (in shel)
+* In shell
   * `<ctrl>t` for fuzzing file find
   * `<ctrl>r` for fuzzing history find
 
@@ -79,6 +100,27 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
 * `<ctrl>b E` to turn off synchronize panes typing
 * `<ctrl>b m` to toggle mouse support (useful to allow select + copy)
 
+### Autojump
+* In shell
+  * `j somefolder` to jump to a folder that contains somefolder that you cd'ed to previously
+  * `jc somefolder` to jump to a child folder
+  * `jo [folder]` to jump to a folder using the system's file manager
 
-## Per language setup
-* [Rust](rust.md)
+### Ripgrep
+* In shell
+  * `rg <pattern>` to find any files that contain the given pattern
+* In vim
+  * `Rg <pattern>` to ripgrep the given pattern
+  * `<leader>r` to ripgrep the current word
+
+## TODO
+- [ ] RVM, NVM and Python
+- [ ] https://nerdfonts.com/
+- [ ] Git config
+  - https://git-scm.com/docs/git-rerere
+  - Track
+  push.default=current
+  rerere.enabled=true
+- [ ] Standardize colors to https://github.com/chriskempson/base16
+  - https://github.com/chriskempson/base16-shell
+  - https://github.com/chriskempson/base16-shell/issues/162

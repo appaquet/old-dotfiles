@@ -23,16 +23,9 @@ set nocompatible        " be iMproved
   set exrc                " allow project specific .vimrc
   set secure              " (https://andrew.stwrt.ca/posts/project-specific-vimrc/)
 
-  set background=dark     " Assume a dark background
-
   "" Persists the undo across sessions
   set undodir=~/.vim/undodir
   set undofile
-
-  "" Make sure we have 256 colors
-  set t_Co=256
-  let &t_AB="\e[48;5;%dm"
-  let &t_AF="\e[38;5;%dm"
 
   "" Fixes slow escape in tmux
   "" https://www.reddit.com/r/neovim/comments/35h1g1/neovim_slow_to_respond_after_esc/
@@ -167,6 +160,12 @@ endfunction
     map <Leader>e :NERDTreeFind<CR>
 
   ""
+  "" Base16 theme
+  ""
+    set background=dark     " Assume a dark background
+    Plugin 'chriskempson/base16-vim'
+
+  ""
   "" Airline (Powerline + Minibufexp alternative)
   ""
     Plugin 'vim-airline/vim-airline'
@@ -174,7 +173,7 @@ endfunction
     if !has('gui_running')
       let g:airline_powerline_fonts = 1
       Plugin 'vim-airline/vim-airline-themes'
-      let g:airline_theme='wombat'
+      let g:airline_theme='base16_default'
     endif
 
   ""
@@ -188,13 +187,11 @@ endfunction
     Plugin 'ctrlpvim/ctrlp.vim'
 
   ""
-  ""  Ack
-  ""     -> Ack wrapper (find in files)
+  ""  Ripgrep
+  ""     -> Ripgrep wrapper
   ""
-    if executable('ack')
-      Plugin 'mileszs/ack.vim'
-      map <Leader>a :Ack <cword><CR>
-    endif
+    Plugin 'jremmen/vim-ripgrep'
+    map <Leader>r :Rg <cword><CR>
 
   ""
   "" YouCompleteMe

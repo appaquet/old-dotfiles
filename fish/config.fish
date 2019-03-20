@@ -1,21 +1,23 @@
 
-# Source .profile to get all variables
+# Source ~/.profile 
 fenv source ~/.profile
-
-# Change fish greeting
-set fish_greeting ""
 
 # Paths
 set -U fish_user_paths $fish_user_paths ~/bin
 set -U fish_user_paths $fish_user_paths ~/.local/bin
 
-# Powerline
-set fish_function_path $fish_function_path "/home/appaquet/.local/lib/python2.7/site-packages/powerline/bindings/fish"
-powerline-setup
-
 # Aliases
 alias l "ls"
+alias vim "nvim"
+alias vi "nvim"
+
 # fzf
 function fish_user_key_bindings
   fzf_key_bindings
 end
+
+# Theme
+set -g theme_color_scheme base16-dark
+
+# Source local configuration
+[ -f ~/.config/fish/local.fish ]; and source ~/.config/fish/local.fish
