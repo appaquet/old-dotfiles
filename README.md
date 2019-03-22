@@ -2,19 +2,18 @@
 New version of my old [dotfiles](https://github.com/appaquet/app-vim)
 
 ## Shell & editor setup
-* Checkout this repo recursively in your home
+* Checkout this repo recursively in your ~/
   * `git clone --recursive https://github.com/appaquet/dotfiles.git` ~/dotfiles
-  * Symlink bin folder `ln -s ~/dotfiles/bin ~/bin`
 
 * Fish shell
   * To install
     * Ubuntu: `sudo apt install fish`
-    * MacOS: `brew install fish` and follow instructions about `/etc/shells`
-  * Change shell
+    * MacOS: `brew install fish` and follow instructions about adding fish to `/etc/shells`
+  * Change your shell
     * Ubuntu: `chsh -s /usr/bin/fish`
     * MacOS: `chsh -s /usr/local/bin/fish`
   * Symlink fish's config folder: `mkdir -p ~/.config/fish/ && ln -s ~/dotfiles/fish/config.fish ~/.config/fish/`
-  * Log out and log back (you'll get errors as not everyhing is setuped yet)
+  * Log out and log back (you'll get errors as not everyhing is setup yet)
   * Install oh-my-fish framework
     * `curl -L https://get.oh-my.fish | fish`
   * Install plugins & themes
@@ -25,7 +24,7 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
     * You can still use your `~/.profile` as you would do in bash thanks to the `foreign-env` plugin that sources your `~/.profile`
     * You can put any local specifc fish config in `~/.config/fish/local.fish`
 
-* [fzf](https://github.com/junegunn/fzf) (shell fuzzing file finder / history finder)
+* [fzf](https://github.com/junegunn/fzf) (shell fuzzy shell history finder & fuzzy file finder)
   * To install
     * `cd ./fzf && ./install`
 
@@ -92,12 +91,12 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
 
 ### fzf (in shel)
 * In shell
-  * `<ctrl>t` for fuzzing file find
-  * `<ctrl>r` for fuzzing history find
+  * `<ctrl>t` for fuzzy file find
+  * `<ctrl>r` for fuzzy history find
 
 ### tmux
-* `<ctrl>b e` to turn on synchronize panes typing
-* `<ctrl>b E` to turn off synchronize panes typing
+* `<ctrl>b e` to turn on synchronized panes
+* `<ctrl>b E` to turn off synchronized panes
 * `<ctrl>b m` to toggle mouse support (useful to allow select + copy)
 
 ### Autojump
