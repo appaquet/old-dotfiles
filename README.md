@@ -58,6 +58,15 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
     * Ubuntu: `sudo apt install ripgrep`
     * MacOS: `snap install --classic ripgrep`
 
+* [Alacritty](https://github.com/jwilm/alacritty) (A GPU accelared terminal written in Rust)
+  * Main advantage of Alacritty is it's cross platform and configurable via a configuration file
+  * To install:
+    * Follow instructions on GitHub
+    * Install patched fonts
+      * `git clone https://github.com/powerline/fonts`
+      * `cd fonts; ./install.sh`
+    * Symlink config folder: `mkdir -p ~/.config/alacritty/; ln -s ~/dotfiles/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml`
+
 ## Languages setup
 * [Rust](rust.md)
 
