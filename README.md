@@ -102,9 +102,15 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
   * `<ctrl>r` for fuzzy history find
 
 ### tmux
-* `<ctrl>b e` to turn on synchronized panes
-* `<ctrl>b E` to turn off synchronized panes
-* `<ctrl>b m` to toggle mouse support (useful to allow select + copy)
+* Main shortcuts
+  * `<ctrl>b e` to toggle synchronized panes
+  * `<ctrl>b m` to toggle mouse support (useful to allow select + copy)
+  * `<ctrl>b <ctrl>l` to navigate to next window
+  * `<ctrl>b <ctrl>h` to navigate to prev window
+  * `<ctrl>b <tab>` to navigate to last window
+  * `<ctrl>b <enter>` to enter copy mode, and then escape to exit
+
+* For more shorcuts, see [here](https://github.com/gpakosz/.tmux)
 
 ### Autojump
 * In shell
