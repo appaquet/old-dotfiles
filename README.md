@@ -5,7 +5,7 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
 * Checkout this repo recursively in your ~/
   * `git clone --recursive https://github.com/appaquet/dotfiles.git` ~/dotfiles
 
-* Fish shell
+* [Fish shell](https://fishshell.com/)
   * To install
     * Ubuntu: `sudo apt install fish`
     * MacOS: `brew install fish` and follow instructions about adding fish to `/etc/shells`
@@ -28,7 +28,7 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
   * To install
     * `cd ./fzf && ./install`
 
-* Neovim
+* [Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
    * To install, see https://github.com/neovim/neovim/wiki/Installing-Neovim
      * Make sure to update alternatives on Ubuntu
      * On MacOS, you may need to install [python neovim](https://ricostacruz.com/til/neovim-with-python-on-osx): `pip3 install neovim --upgrade`
@@ -38,12 +38,10 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
      * `cd /home/appaquet/.vim/bundle/YouCompleteMe`
      * `./install.py`
 
-* Tmux
-   * Symlink tmux conf: `ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf`
-   * Create empty local conf: `touch ~/.tmux.conf.local`
-
-  * **Notes**
-    * You can put any local specifc fish config in `~/.tmux.conf.local`
+* [Tmux](https://github.com/tmux/tmux)
+   * I use [Gpakosz](https://github.com/gpakosz/.tmux) self-contained tmux configuration, which is checked out as a submodule.
+   * Symlink main tmux config: `ln -s ./dotfiles/tmux/gpakosz_tmux/.tmux.conf ~/.tmux.conf`
+   * Symlink personalized conf: `ln -s ./dotfiles/tmux/tmux.conf.local ~/.tmux.conf.local`
 
 * [Autojump](https://github.com/wting/autojump) (Fast jumping to directories)
   * To install
@@ -123,12 +121,8 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
 
 ## TODO
 - [ ] RVM, NVM and Python
-- [ ] https://nerdfonts.com/
 - [ ] Git config
   - https://git-scm.com/docs/git-rerere
   - Track
   push.default=current
   rerere.enabled=true
-- [ ] Standardize colors to https://github.com/chriskempson/base16
-  - https://github.com/chriskempson/base16-shell
-  - https://github.com/chriskempson/base16-shell/issues/162
