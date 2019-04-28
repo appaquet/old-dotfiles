@@ -1,29 +1,56 @@
+
 [desktop/wm/keybindings]
+switch-to-workspace-right=@as []
 switch-to-workspace-2=['<Super>2']
 switch-to-workspace-up=['<Super>Up']
 show-desktop=['<Primary><Shift><Super>d']
-switch-input-source-backward=['<Primary><Shift><Super>Tab']
+move-to-monitor-right=@as []
 move-to-workspace-1=['<Shift><Super>exclam']
+switch-to-workspace-left=@as []
+switch-input-source-backward=['<Primary><Shift><Alt>Tab']
 move-to-workspace-4=['<Shift><Super>dollar']
+switch-panels-backward=@as []
+unmaximize=@as []
 switch-to-workspace-3=['<Super>3']
 maximize=@as []
 move-to-workspace-2=['<Shift><Super>at']
+move-to-monitor-left=@as []
 switch-to-workspace-down=['<Super>Down']
 move-to-monitor-up=@as []
 switch-to-workspace-1=['<Super>1']
 switch-to-workspace-4=['<Super>4']
-unmaximize=@as []
+switch-panels=@as []
 move-to-workspace-up=['<Shift><Super>Up']
 move-to-workspace-3=['<Shift><Super>numbersign']
 move-to-workspace-down=['<Shift><Super>Down']
 move-to-monitor-down=@as []
-switch-input-source=['<Primary><Super>Tab']
+switch-input-source=['<Primary><Alt>Tab']
 
 [desktop/wm/preferences]
+titlebar-font='Ubuntu Bold 10'
 resize-with-right-button=true
+
+[desktop/peripherals/touchpad]
+two-finger-scrolling-enabled=true
 
 [desktop/peripherals/mouse]
 natural-scroll=true
+
+[desktop/interface]
+gtk-im-module='gtk-im-context-simple'
+text-scaling-factor=1.25
+font-name='Ubuntu 10'
+document-font-name='Ubuntu 10'
+gtk-theme='Yaru-dark'
+monospace-font-name='Ubuntu Mono 11'
+
+[mutter]
+dynamic-workspaces=false
+
+[nautilus/preferences]
+search-view='list-view'
+default-folder-viewer='list-view'
+search-filter-time-type='last_modified'
 
 [settings-daemon/plugins/color]
 night-light-enabled=true
