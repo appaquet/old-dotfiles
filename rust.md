@@ -1,6 +1,7 @@
 
 # Setup
 * Install via [`rustup`](https://rustup.rs/)
+* Install tools: `rustup component add clippy rustfmt`
 
 # IDE
 * I use the [`IntelliJ Rust plugin`](https://github.com/intellij-rust/intellij-rust) in [`Jetbrains CLion`](https://www.jetbrains.com/clion/)

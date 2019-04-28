@@ -1,9 +1,12 @@
 [submodule "nvim/bundle/Vundle.vim"]
 	path = nvim/bundle/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim.git
-[submodule "fzf"]
-	path = fzf
-	url = ./fzf
 [submodule "tmux/gpakosz_tmux"]
 	path = tmux/gpakosz_tmux
 	url = https://github.com/gpakosz/.tmux.git
+[submodule "fzf"]
+	path = fzf
+	url = https://github.com/junegunn/fzf.git
+[submodule "fonts"]
+	path = fonts
+	url = https://github.com/powerline/fonts.git
