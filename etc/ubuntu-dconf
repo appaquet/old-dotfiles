@@ -1,0 +1,64 @@
+
+[desktop/wm/keybindings]
+switch-to-workspace-2=['<Super>2']
+switch-to-workspace-up=['<Super>Up']
+show-desktop=['<Primary><Shift><Super>d']
+switch-input-source-backward=['<Primary><Shift><Super>Tab']
+move-to-workspace-1=['<Shift><Super>exclam']
+move-to-workspace-4=['<Shift><Super>dollar']
+switch-to-workspace-3=['<Super>3']
+maximize=@as []
+move-to-workspace-2=['<Shift><Super>at']
+switch-to-workspace-down=['<Super>Down']
+move-to-monitor-up=@as []
+switch-to-workspace-1=['<Super>1']
+switch-to-workspace-4=['<Super>4']
+unmaximize=@as []
+move-to-workspace-up=['<Shift><Super>Up']
+move-to-workspace-3=['<Shift><Super>numbersign']
+move-to-workspace-down=['<Shift><Super>Down']
+move-to-monitor-down=@as []
+switch-input-source=['<Primary><Super>Tab']
+
+[desktop/peripherals/mouse]
+natural-scroll=true
+
+[settings-daemon/plugins/color]
+night-light-enabled=true
+night-light-schedule-automatic=true
+
+[settings-daemon/plugins/media-keys]
+screensaver='<Super>l'
+
+[shell/extensions/dash-to-dock]
+extend-height=false
+app-hotkey-4=['<Super><Ctrl><Alt>4']
+dock-fixed=true
+shortcut-timeout=2.0
+custom-theme-shrink=false
+app-hotkey-2=['<Super><Ctrl><Alt>2']
+app-hotkey-5=['<Super><Ctrl><Alt>5']
+apply-custom-theme=false
+height-fraction=0.63
+app-hotkey-3=['<Super><Ctrl><Alt>3']
+hot-keys=false
+shortcut=['<Super>q']
+hotkeys-overlay=true
+shortcut-text='<Super>q'
+dock-position='BOTTOM'
+hotkeys-show-dock=true
+app-hotkey-1=['<Super><Ctrl><Alt>1']
+
+[shell/keybindings]
+switch-to-application-1=@as []
+switch-to-application-7=@as []
+switch-to-application-6=@as []
+switch-to-application-5=@as []
+switch-to-application-4=@as []
+switch-to-application-3=@as []
+switch-to-application-9=@as []
+switch-to-application-2=@as []
+switch-to-application-8=@as []
+
+[system/location]
+enabled=false

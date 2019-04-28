@@ -3,7 +3,7 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
 
 ## Shell & editor setup
 * Checkout this repo recursively in your ~/
-  * `git clone --recursive https://github.com/appaquet/dotfiles.git` ~/dotfiles
+  * `git clone --recursive https://github.com/appaquet/dotfiles.git ~/dotfiles`
 
 * [Fish shell](https://fishshell.com/)
   * To install
@@ -64,8 +64,12 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
       * `cd fonts; ./install.sh`
     * Symlink config folder: `mkdir -p ~/.config/alacritty/; ln -s ~/dotfiles/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml`
 
-## Languages setup
+* Utils
+  * Add to your `~/.profile`: `PATH="$HOME/dotfiles/bin:$PATH"`
+
+## Other setup
 * [Rust](rust.md)
+* [Ubuntu Desktop](ubuntu.md)
 
 ## Usage
 ### Neovim
@@ -129,5 +133,6 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
 - [ ] Git config
   - https://git-scm.com/docs/git-rerere
   - Track
+  - GPG
   push.default=current
   rerere.enabled=true
