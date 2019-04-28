@@ -1,8 +1,3 @@
-## Via Ubuntu software manager
-- Install Chromium
-- Install Gnome Tweaks
-- Install Dconf editor
-
 ## Setup
 - Execute `./install-ubuntu.sh`
 
