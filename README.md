@@ -35,7 +35,7 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
    * Symlink config folder: `ln -s ~/dotfiles/nvim ~/.config/nvim`
    * Install plugins `nvim +BundleInstall +qall`
    * Finish YouCompleteMe plugin installation
-     * `cd /home/appaquet/.vim/bundle/YouCompleteMe`
+     * `cd ~/.vim/bundle/YouCompleteMe`
      * `./install.py`
 
 * [Tmux](https://github.com/tmux/tmux)
@@ -54,14 +54,13 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
 * [RipGrep](https://github.com/BurntSushi/ripgrep) (A very fast grep / ack replacement)
   * To install
     * Ubuntu: `sudo apt install ripgrep`
-    * MacOS: `snap install --classic ripgrep`
+    * MacOS: `brew install ripgrep`
 
 * [Alacritty](https://github.com/jwilm/alacritty) (A GPU accelared terminal written in Rust)
   * Main advantage of Alacritty is it's cross platform and configurable via a configuration file
   * To install:
     * Follow instructions on GitHub
     * Install patched fonts
-      * `git clone https://github.com/powerline/fonts`
       * `cd fonts; ./install.sh`
     * Symlink config folder: `mkdir -p ~/.config/alacritty/; ln -s ~/dotfiles/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml`
 
