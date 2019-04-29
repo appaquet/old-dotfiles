@@ -12,7 +12,6 @@ function confirm {
   fi
 }
 
-
 confirm "Install packages?"
 if [[ "$ret" == "true" ]]; then
   sudo apt install git neovim tmux fish curl cmake python-dev \
@@ -38,7 +37,6 @@ if [[ ! -d ~/dotfiles ]]; then
   git clone --recursive https://github.com/appaquet/dotfiles.git ~/dotfiles
 fi
 
-
 if [[ ! -f ~/dotfiles/fzf/bin/fzf ]]; then
   cd ~/dotfiles/fzf && ./install
 fi
@@ -51,10 +49,8 @@ if [[ ! -d ~/.vim/bundle ]]; then
   popd
 fi
 
-
 ln -sf ~/dotfiles/tmux/gpakosz_tmux/.tmux.conf ~/.tmux.conf
 ln -sf ~/dotfiles/tmux/tmux.conf.local ~/.tmux.conf.local
-
 
 confirm "Setup patched fonts?"
 if [[ "$ret" == "true" ]]; then
@@ -62,3 +58,6 @@ if [[ "$ret" == "true" ]]; then
   ./install.sh
   popd
 fi
+
+git config --global rerere.enabled true
+git config --global push.default current

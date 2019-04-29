@@ -128,11 +128,3 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
   * `Rg <pattern>` to ripgrep the given pattern
   * `<leader>r` to ripgrep the current word
 
-## TODO
-- [ ] RVM, NVM and Python
-- [ ] Git config
-  - https://git-scm.com/docs/git-rerere
-  - Track
-  - GPG
-  push.default=current
-  rerere.enabled=true
