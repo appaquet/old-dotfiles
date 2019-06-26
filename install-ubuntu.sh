@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -xe
 
 function confirm {
   echo -n $1
@@ -14,7 +14,7 @@ function confirm {
 
 confirm "Install packages?"
 if [[ "$ret" == "true" ]]; then
-  sudo apt install git neovim tmux fish curl cmake python-dev \
+  sudo apt install git neovim tmux fish curl cmake python-dev htop \
                    net-tools pkg-config libssl-dev valgrind dconf-editor \
                    autojump ripgrep chromium-browser dconf-editor gnome-tweaks
 fi

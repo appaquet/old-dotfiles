@@ -18,7 +18,7 @@ if [[ "$WAY" != "in" && "$WAY" != "out" ]]; then
   exit 0
 fi
 
-set -eu
+set -e
 if [[ "$CURRENT_NAME" == "$PC1_NAME" ]]; then
   LOCAL_NAME=$PC1_NAME
   LOCAL_IP=$PC1_IP
@@ -43,10 +43,10 @@ fi
 
 if [[ "$WAY" == "out" ]]; then
   echo "$LOCAL_NAME --> $REMOTE_NAME"
-  echo "rsync -av $EXCLUDES $RSYNC_EXTRA $CURRENT_DIR $REMOTE_IP:$REMOTE_PATH/../"
+  set -x
   rsync -av $EXCLUDES $RSYNC_EXTRA $CURRENT_DIR $REMOTE_IP:$REMOTE_PATH/../
 else
   echo "$LOCAL_NAME <-- $REMOTE_NAME"
-  echo "rsync -av $EXCLUDES $RSYNC_EXTRA $REMOTE_IP:$REMOTE_PATH $CURRENT_DIR/../"
+  set -x
   rsync -av $EXCLUDES $RSYNC_EXTRA $REMOTE_IP:$REMOTE_PATH $CURRENT_DIR/../
 fi
