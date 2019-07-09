@@ -37,19 +37,23 @@ titlebar-font='Ubuntu Bold 10'
 resize-with-right-button=true
 
 [desktop/interface]
-gtk-im-module='gtk-im-context-simple'
-text-scaling-factor=1.25
-font-name='Ubuntu 10'
-document-font-name='Ubuntu 10'
-clock-show-weekday=true
-monospace-font-name='Ubuntu Mono 11'
+enable-animations=true
 gtk-theme='Yaru-dark'
+font-name='Ubuntu 10'
+gtk-im-module='gtk-im-context-simple'
+monospace-font-name='Ubuntu Mono 11'
+clock-show-weekday=true
+text-scaling-factor=1.25
+document-font-name='Ubuntu 10'
 
 [mutter]
 dynamic-workspaces=false
 
 [desktop/input-sources]
+mru-sources=[('xkb', 'ca+multix'), ('xkb', 'us')]
 per-window=true
+sources=[('xkb', 'us'), ('xkb', 'ca+multix')]
+xkb-options=['caps:escape']
 
 [nautilus/preferences]
 search-view='list-view'
