@@ -68,6 +68,7 @@ set nocompatible        " be iMproved
   map <Leader>] :bn!<CR>
   map <Leader>[ :bp!<CR>
   map <Leader>x :w<CR>:!./%<CR>
+  map <Leader>z :'<,'>w !sh<CR>
   map <D-x> :w<CR>:!./%<CR>
   map <D-s> :w<CR>
   map <Leader>s :w<CR>
