@@ -72,6 +72,11 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
 * [Ubuntu Desktop](ubuntu.md)
 
 ## Usage
+### Fish
+* With no input `<alt><left>` or `<alt><right>` to jump to previous directory in history
+* With input `<alt><left>` or `<alt><right>` to between words
+* With input `<ctl>w` to delete previous word
+
 ### Neovim
 * My leader key is bound to `\` (backslash)
 
@@ -87,6 +92,7 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
   * `<leader>[` to switch to previous buffer
   * `<leader>w` to save current buffer
   * `<leader>x` to save and then execute current buffer (as long as it's chmod +x)
+  * `<leader>z` to execute current visual selection in a shell
   * `<leader>r` to save current buffer and then execute `rsync.sh` in working dir
   * `<leader>q` to close the current buffer (equivalent to `:q`)
   * `<leader>w` to close the current buffer by trying not to messup the layout
@@ -99,7 +105,7 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
 
 * You can check [`init.vim`](nvim/init.vim) for more commands / mappings
 
-### fzf (in shel)
+### fzf (in shell)
 * In shell
   * `<ctrl>t` for fuzzy file find
   * `<ctrl>r` for fuzzy history find
@@ -112,6 +118,8 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
   * `<ctrl>b <ctrl>h` to navigate to prev window
   * `<ctrl>b <tab>` to navigate to last window
   * `<ctrl>b <enter>` to enter copy mode, and then escape to exit
+  * `<ctrl>b <enter>` to enter copy mode, and then escape to exit
+  * `<ctrl>b <alt><arrows>` to resize pane
 
 * For more shorcuts, see [here](https://github.com/gpakosz/.tmux)
 

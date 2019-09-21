@@ -16,7 +16,7 @@ confirm "Install packages?"
 if [[ "$ret" == "true" ]]; then
   sudo apt install git neovim tmux fish curl cmake python-dev htop \
                    net-tools pkg-config libssl-dev valgrind dconf-editor \
-                   autojump ripgrep chromium-browser dconf-editor gnome-tweaks
+                   autojump ripgrep chromium-browser dconf-editor gnome-tweaks xclip
 fi
 
 confirm "Load gnome settings?"

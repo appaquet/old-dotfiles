@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+os=$(uname)
+if [[ "$os" == "Linux" ]]; then
+  xclip -selection clipboard
+elif [[ "$os" == "Darwin" ]]; then
+  reattach-to-user-namespace /usr/bin/pbcopy
+fi
+
