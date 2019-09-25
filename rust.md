@@ -14,3 +14,4 @@
 * [`cargo tarpaulin`](https://github.com/xd009642/tarpaulin) for code coverage
 * [`cargo lipo`](https://github.com/TimNN/cargo-lipo) to compile for iOS
 * [`cargo cbindgen`](https://github.com/eqrion/cbindgen) to generate C headers from Rust
+* [`cargo bloat`](https://github.com/RazrFalcon/cargo-bloat) to find out what takes most of the space in your executable

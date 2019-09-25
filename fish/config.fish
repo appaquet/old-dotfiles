@@ -21,6 +21,7 @@ abbr gcm 'git commit -m'
 abbr gpom 'git pull origin master'
 abbr gca 'git commit --amend'
 abbr gr 'git rev-parse --short @'
+abbr gb 'git for-each-ref --sort=-committerdate refs/heads/ --format="%(color: red)%(committerdate:short) %(color: 244)-- %(color: cyan)%(refname:short) %(color: 244)-- %(color: green)%(subject)"'
 
 # fzf
 function fish_user_key_bindings
