@@ -1,64 +1,64 @@
 
-[desktop/peripherals/touchpad]
-two-finger-scrolling-enabled=true
-
-[desktop/peripherals/mouse]
-natural-scroll=true
-
-[desktop/wm/keybindings]
-switch-to-workspace-right=@as []
-switch-to-workspace-2=['<Super>2']
-switch-to-workspace-up=['<Super>Up']
-show-desktop=['<Primary><Shift><Super>d']
-move-to-monitor-right=@as []
-move-to-workspace-1=['<Shift><Super>exclam']
-switch-to-workspace-left=@as []
-switch-input-source-backward=['<Primary><Shift><Alt>Tab']
-move-to-workspace-4=['<Shift><Super>dollar']
-switch-panels-backward=@as []
-unmaximize=@as []
-switch-to-workspace-3=['<Super>3']
-maximize=@as []
-move-to-workspace-2=['<Shift><Super>at']
-move-to-monitor-left=@as []
-switch-to-workspace-down=['<Super>Down']
-move-to-monitor-up=@as []
-switch-to-workspace-1=['<Super>1']
-switch-to-workspace-4=['<Super>4']
-switch-panels=@as []
-move-to-workspace-up=['<Shift><Super>Up']
-move-to-workspace-3=['<Shift><Super>numbersign']
-move-to-workspace-down=['<Shift><Super>Down']
-move-to-monitor-down=@as []
-switch-input-source=['<Primary><Alt>Tab']
-
-[desktop/wm/preferences]
-titlebar-font='Ubuntu Bold 10'
-resize-with-right-button=true
-
-[desktop/interface]
-enable-animations=true
-gtk-theme='Yaru-dark'
-font-name='Ubuntu 10'
-gtk-im-module='gtk-im-context-simple'
-monospace-font-name='Ubuntu Mono 11'
-clock-show-weekday=true
-text-scaling-factor=1.25
-document-font-name='Ubuntu 10'
-
-[mutter]
-dynamic-workspaces=false
-
 [desktop/input-sources]
 mru-sources=[('xkb', 'ca+multix'), ('xkb', 'us')]
 per-window=true
 sources=[('xkb', 'us'), ('xkb', 'ca+multix')]
 xkb-options=['caps:escape']
 
+[desktop/interface]
+clock-show-weekday=true
+document-font-name='Ubuntu 10'
+enable-animations=true
+font-name='Ubuntu 10'
+gtk-im-module='gtk-im-context-simple'
+gtk-theme='Yaru-dark'
+monospace-font-name='Ubuntu Mono 11'
+text-scaling-factor=1.25
+
+[desktop/peripherals/mouse]
+natural-scroll=true
+
+[desktop/peripherals/touchpad]
+two-finger-scrolling-enabled=true
+
+[desktop/wm/keybindings]
+maximize=@as []
+move-to-monitor-down=@as []
+move-to-monitor-left=@as []
+move-to-monitor-right=@as []
+move-to-monitor-up=@as []
+move-to-workspace-1=['<Shift><Super>exclam']
+move-to-workspace-2=['<Shift><Super>at']
+move-to-workspace-3=['<Shift><Super>numbersign']
+move-to-workspace-4=['<Shift><Super>dollar']
+move-to-workspace-down=['<Shift><Super>Down']
+move-to-workspace-up=['<Shift><Super>Up']
+show-desktop=['<Primary><Shift><Super>d']
+switch-input-source-backward=['<Primary><Shift><Alt>Tab']
+switch-input-source=['<Primary><Alt>Tab']
+switch-panels-backward=@as []
+switch-panels=@as []
+switch-to-workspace-1=['<Super>1']
+switch-to-workspace-2=['<Super>2']
+switch-to-workspace-3=['<Super>3']
+switch-to-workspace-4=['<Super>4']
+switch-to-workspace-down=['<Super>Down']
+switch-to-workspace-left=@as []
+switch-to-workspace-right=@as []
+switch-to-workspace-up=['<Super>Up']
+unmaximize=@as []
+
+[desktop/wm/preferences]
+resize-with-right-button=true
+titlebar-font='Ubuntu Bold 10'
+
+[mutter]
+dynamic-workspaces=false
+
 [nautilus/preferences]
-search-view='list-view'
 default-folder-viewer='list-view'
 search-filter-time-type='last_modified'
+search-view='list-view'
 
 [settings-daemon/plugins/color]
 night-light-enabled=true
@@ -74,34 +74,34 @@ sleep-inactive-ac-timeout=1800
 sleep-inactive-ac-type='suspend'
 
 [shell/extensions/dash-to-dock]
-extend-height=false
-app-hotkey-4=['<Super><Ctrl><Alt>4']
-dock-fixed=true
-shortcut-timeout=2.0
-custom-theme-shrink=false
+app-hotkey-1=['<Super><Ctrl><Alt>1']
 app-hotkey-2=['<Super><Ctrl><Alt>2']
+app-hotkey-3=['<Super><Ctrl><Alt>3']
+app-hotkey-4=['<Super><Ctrl><Alt>4']
 app-hotkey-5=['<Super><Ctrl><Alt>5']
 apply-custom-theme=false
-height-fraction=0.63
-app-hotkey-3=['<Super><Ctrl><Alt>3']
-hot-keys=false
-shortcut=['<Super>q']
-hotkeys-overlay=true
-shortcut-text='<Super>q'
+custom-theme-shrink=false
+dock-fixed=true
 dock-position='BOTTOM'
+extend-height=false
+height-fraction=0.63
+hot-keys=false
+hotkeys-overlay=true
 hotkeys-show-dock=true
-app-hotkey-1=['<Super><Ctrl><Alt>1']
+shortcut-text='<Super>q'
+shortcut-timeout=2.0
+shortcut=['<Super>q']
 
 [shell/keybindings]
 switch-to-application-1=@as []
-switch-to-application-7=@as []
-switch-to-application-6=@as []
-switch-to-application-5=@as []
-switch-to-application-4=@as []
-switch-to-application-3=@as []
-switch-to-application-9=@as []
 switch-to-application-2=@as []
+switch-to-application-3=@as []
+switch-to-application-4=@as []
+switch-to-application-5=@as []
+switch-to-application-6=@as []
+switch-to-application-7=@as []
 switch-to-application-8=@as []
+switch-to-application-9=@as []
 
 [system/location]
 enabled=false
