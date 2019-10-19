@@ -1,6 +1,5 @@
-
 [desktop/input-sources]
-mru-sources=[('xkb', 'ca+multix'), ('xkb', 'us')]
+mru-sources=[('xkb', 'us'), ('xkb', 'ca+multix')]
 per-window=true
 sources=[('xkb', 'us'), ('xkb', 'ca+multix')]
 xkb-options=['caps:escape']
@@ -54,6 +53,13 @@ titlebar-font='Ubuntu Bold 10'
 
 [mutter]
 dynamic-workspaces=false
+
+[nautilus/compression]
+default-compression-format='zip'
+
+[nautilus/list-view]
+default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'where', 'date_modified', 'date_modified_with_time', 'date_accessed', 'recency', 'starred', 'detailed_type']
+default-visible-columns=['name', 'size', 'date_modified', 'starred']
 
 [nautilus/preferences]
 default-folder-viewer='list-view'

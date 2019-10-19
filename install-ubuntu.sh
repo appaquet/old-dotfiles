@@ -16,12 +16,14 @@ confirm "Install packages?"
 if [[ "$ret" == "true" ]]; then
   sudo apt install git neovim tmux fish curl cmake python-dev htop \
                    net-tools pkg-config libssl-dev valgrind dconf-editor \
-                   autojump ripgrep chromium-browser dconf-editor gnome-tweaks xclip
+                   autojump ripgrep dconf-editor gnome-tweaks xclip clang \
+                   qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virt-manager \
+                   nvtop dstat
 fi
 
 confirm "Load gnome settings?"
 if [[ "$ret" == "true" ]]; then
-  # To dump: dconf dump /org/gnome/ > ./etc/ubuntu-dconf
+  # To dump: dconf dump /org/gnome/ | ~/dotfiles/bin/inisort > ./etc/ubuntu-dconf
   # Then cleanup unnecessary stuff
   dconf load /org/gnome/ < ./etc/ubuntu-dconf
 fi
