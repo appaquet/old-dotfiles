@@ -1,5 +1,5 @@
 #!/bin/bash
-set -xe
+set -e
 
 function confirm {
   echo -n $1
@@ -18,7 +18,7 @@ if [[ "$ret" == "true" ]]; then
                    net-tools pkg-config libssl-dev valgrind dconf-editor \
                    autojump ripgrep dconf-editor gnome-tweaks xclip clang \
                    qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virt-manager \
-                   nvtop dstat
+                   dstat chrome-gnome-shell
 fi
 
 confirm "Load gnome settings?"
