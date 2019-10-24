@@ -1,3 +1,4 @@
+
 [desktop/input-sources]
 mru-sources=[('xkb', 'us'), ('xkb', 'ca+multix')]
 per-window=true
@@ -6,19 +7,18 @@ xkb-options=['caps:escape']
 
 [desktop/interface]
 clock-show-weekday=true
-document-font-name='Ubuntu 10'
 enable-animations=true
-font-name='Ubuntu 10'
 gtk-im-module='gtk-im-context-simple'
 gtk-theme='Yaru-dark'
-monospace-font-name='Ubuntu Mono 11'
-text-scaling-factor=1.25
 
 [desktop/peripherals/mouse]
 natural-scroll=true
 
 [desktop/peripherals/touchpad]
 two-finger-scrolling-enabled=true
+
+[desktop/sound]
+allow-volume-above-100-percent=false
 
 [desktop/wm/keybindings]
 maximize=@as []
@@ -49,7 +49,6 @@ unmaximize=@as []
 
 [desktop/wm/preferences]
 resize-with-right-button=true
-titlebar-font='Ubuntu Bold 10'
 
 [mutter]
 dynamic-workspaces=false

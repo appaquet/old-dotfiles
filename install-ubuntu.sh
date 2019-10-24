@@ -18,7 +18,7 @@ if [[ "$ret" == "true" ]]; then
                    net-tools pkg-config libssl-dev valgrind dconf-editor \
                    autojump ripgrep dconf-editor gnome-tweaks xclip clang \
                    qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virt-manager \
-                   dstat chrome-gnome-shell
+                   dstat chrome-gnome-shell jq
 fi
 
 confirm "Load gnome settings?"
