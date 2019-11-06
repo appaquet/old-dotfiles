@@ -14,6 +14,7 @@ alias vi 'nvim'
 
 abbr jql 'jq -C . | less --raw'
 abbr gs 'git status'
+abbr gl 'git log'
 abbr gd 'git diff'
 abbr gds 'git diff --staged'
 abbr gp 'git pull'
