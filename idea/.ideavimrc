@@ -1,0 +1,9 @@
+set surround
+
+"" See https://youtrack.jetbrains.com/issue/VIM-634
+"" Ctrl-N to start and next, Ctrl-X to skip current, Ctrl-P for previous
+set multiple-cursors
+map <C-N>  <A-N>
+map <C-P>  <A-P>
+map <C-X>  <A-X>
+map g<C-N> g<A-N>
