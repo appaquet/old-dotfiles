@@ -64,6 +64,9 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
       * `cd fonts; ./install.sh`
     * Symlink config folder: `mkdir -p ~/.config/alacritty/; ln -s ~/dotfiles/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml`
 
+* JetBrains' idea based IDEs
+  * Symlink vim config: `ln -sf ~/dotfiles/idea/.ideavimrc ~/.ideavimrc`
+
 * Utils
   * Add to your `~/.profile`: `PATH="$HOME/dotfiles/bin:$PATH"`
 

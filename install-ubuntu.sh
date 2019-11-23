@@ -53,6 +53,7 @@ fi
 
 ln -sf ~/dotfiles/tmux/gpakosz_tmux/.tmux.conf ~/.tmux.conf
 ln -sf ~/dotfiles/tmux/tmux.conf.local ~/.tmux.conf.local
+ln -sf ~/dotfiles/idea/.ideavimrc ~/.ideavimrc
 
 confirm "Setup patched fonts?"
 if [[ "$ret" == "true" ]]; then
