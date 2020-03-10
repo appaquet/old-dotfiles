@@ -56,6 +56,13 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
     * Ubuntu: `sudo apt install ripgrep`
     * MacOS: `brew install ripgrep`
 
+* [Git-delta](https://crates.io/crates/git-delta) (Much better git diff)
+  * To install
+    * Ubuntu: `cargo install git-delta`
+    * MacOS: `brew install git-delta`
+  * Install in git:
+    * `git config --global core.pager "delta --dark"  # --light for light terminal backgrounds`
+
 * [Alacritty](https://github.com/jwilm/alacritty) (A GPU accelared terminal written in Rust)
   * Main advantage of Alacritty is it's cross platform and configurable via a configuration file
   * To install:

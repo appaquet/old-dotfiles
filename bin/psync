@@ -33,7 +33,7 @@ else
   REMOTE_PATH="${CURRENT_DIR/$PC2_ROOT/$PC1_ROOT}"    
 fi
 
-EXCLUDES="--exclude .DS_Store"
+EXCLUDES="--exclude .DS_Store --exclude .idea"
 
 if [[ -f ".psync_ignore" ]]; then
   for pattern in `cat .psync_ignore`; do
