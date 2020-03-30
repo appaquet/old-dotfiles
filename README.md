@@ -63,6 +63,16 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
   * Install in git:
     * `git config --global core.pager "delta --dark"  # --light for light terminal backgrounds`
 
+* [Bottom](https://github.com/ClementTsang/bottom) (Htop alternative with disk + network)
+  * To install
+    * Ubuntu: `cargo install bottom`
+    * MacOS: `brew install clementtsang/bottom/bottom`
+
+* [Bandwhich](https://github.com/imsnif/bandwhich) (Network monitoring / top like by process/hosts)
+  * To install
+    * Ubuntu: `cargo install bandwhich`
+    * MacOS: `brew install bandwhich`
+
 * [Alacritty](https://github.com/jwilm/alacritty) (A GPU accelared terminal written in Rust)
   * Main advantage of Alacritty is it's cross platform and configurable via a configuration file
   * To install:
