@@ -1,4 +1,5 @@
 
+
 [desktop/input-sources]
 mru-sources=[('xkb', 'us'), ('xkb', 'ca+multix')]
 per-window=true
@@ -30,6 +31,8 @@ move-to-workspace-1=['<Shift><Super>exclam']
 move-to-workspace-2=['<Shift><Super>at']
 move-to-workspace-3=['<Shift><Super>numbersign']
 move-to-workspace-4=['<Shift><Super>dollar']
+move-to-workspace-5=['<Shift><Super>percent']
+move-to-workspace-6=['<Shift><Super>asciicircum']
 move-to-workspace-down=['<Shift><Super>Down']
 move-to-workspace-up=['<Shift><Super>Up']
 show-desktop=['<Primary><Shift><Super>d']
@@ -41,6 +44,8 @@ switch-to-workspace-1=['<Super>1']
 switch-to-workspace-2=['<Super>2']
 switch-to-workspace-3=['<Super>3']
 switch-to-workspace-4=['<Super>4']
+switch-to-workspace-5=['<Super>5']
+switch-to-workspace-6=['<Super>6']
 switch-to-workspace-down=['<Super>Down']
 switch-to-workspace-left=@as []
 switch-to-workspace-right=@as []
@@ -48,6 +53,7 @@ switch-to-workspace-up=['<Super>Up']
 unmaximize=@as []
 
 [desktop/wm/preferences]
+num-workspaces=6
 resize-with-right-button=true
 
 [mutter]
@@ -56,9 +62,13 @@ dynamic-workspaces=false
 [nautilus/compression]
 default-compression-format='zip'
 
+[nautilus/icon-view]
+default-zoom-level='large'
+
 [nautilus/list-view]
 default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'where', 'date_modified', 'date_modified_with_time', 'date_accessed', 'recency', 'starred', 'detailed_type']
 default-visible-columns=['name', 'size', 'date_modified', 'starred']
+default-zoom-level='standard'
 
 [nautilus/preferences]
 default-folder-viewer='list-view'
@@ -68,14 +78,14 @@ search-view='list-view'
 [settings-daemon/plugins/color]
 night-light-enabled=true
 night-light-schedule-automatic=true
+night-light-temperature=uint32 3262
 
 [settings-daemon/plugins/media-keys]
-screensaver='<Super>l'
-terminal=''
+terminal=['']
 
 [settings-daemon/plugins/power]
 power-button-action='interactive'
-sleep-inactive-ac-timeout=1800
+sleep-inactive-ac-timeout=7200
 sleep-inactive-ac-type='suspend'
 
 [shell/extensions/dash-to-dock]
@@ -93,9 +103,19 @@ height-fraction=0.63
 hot-keys=false
 hotkeys-overlay=true
 hotkeys-show-dock=true
+intellihide-mode='FOCUS_APPLICATION_WINDOWS'
 shortcut-text='<Super>q'
 shortcut-timeout=2.0
 shortcut=['<Super>q']
+
+[shell/extensions/system-monitor]
+battery-hidesystem=false
+compact-display=false
+fan-sensor-file='/sys/class/hwmon/hwmon1/fan1_input'
+icon-display=true
+net-display=true
+net-show-menu=true
+net-show-text=true
 
 [shell/keybindings]
 switch-to-application-1=@as []
@@ -110,3 +130,4 @@ switch-to-application-9=@as []
 
 [system/location]
 enabled=false
+
