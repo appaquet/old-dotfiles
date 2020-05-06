@@ -19,5 +19,5 @@
 
 ## Misc
 - [CLion / IntelliJ keyboard shortcut fix](https://askubuntu.com/questions/412046/unable-to-use-intellij-idea-keyboard-shortcuts-on-ubuntu/738479)
-- [Ctrl-Shift-E fix in VSCode](https://github.com/Microsoft/vscode/issues/48480)
+- [Ctrl-Shift-E fix in VSCode](https://github.com/Microsoft/vscode/issues/48480) or [How to add open vscode with GTK_IM_MODULE=“xim”](https://askubuntu.com/questions/1166660/how-to-add-open-vscode-with-gtk-im-module-xim)
 - [Caps Lock Escape remap fix in VSCode](https://github.com/VSCodeVim/Vim/issues/854)
