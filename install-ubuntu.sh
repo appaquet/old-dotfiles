@@ -14,7 +14,7 @@ function confirm {
 
 confirm "Install packages?"
 if [[ "$ret" == "true" ]]; then
-  sudo apt install git neovim tmux fish curl cmake python-dev htop \
+  sudo apt install git neovim tmux fish curl cmake python3-dev htop \
                    net-tools pkg-config libssl-dev valgrind dconf-editor \
                    autojump ripgrep dconf-editor gnome-tweaks xclip clang \
                    qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virt-manager \

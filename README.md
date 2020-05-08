@@ -121,7 +121,9 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
   * `<leader>d` if YouCompleteMe is available, go to definition
   * `<ctrl>p` fuzzy finding file
   * `<ctrl>a` fuzzy find the current word in files using ack
-  * `<leader> m` to toggle mouse support (useful to allow select + copy)
+  * `<leader>m` to toggle mouse support (useful to allow select + copy)
+  * `<leader>y` to yank to clipboard using [bin/pbcopy](bin/pbcopy) util
+  * `<leader>p` to paste from clipboard using [bin/pbpaste](bin/pbpaste) util
 
 * You can check [`init.vim`](nvim/init.vim) for more commands / mappings
 

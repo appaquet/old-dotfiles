@@ -8,7 +8,9 @@
       - Behaviour: Disable keyboard shortcu
 
 - [Gnome System Monitor](https://extensions.gnome.org/extension/120/system-monitor/)
-  - `sudo apt install gir1.2-gtop-2.0 gir1.2-networkmanager-1.0  gir1.2-clutter-1.0`
+  - `sudo apt install gir1.2-gtop-2.0 gir1.2-nm-1.0  gir1.2-clutter-1.0`
+
+- [Emoji selector](https://extensions.gnome.org/extension/1162/emoji-selector/)
 
 ## Alacritty
 - See https://github.com/jwilm/alacritty, follow Pop!_OS instructions
