@@ -295,3 +295,12 @@ bind e setw synchronize-panes\; display-message "Synchronized pane is now #{?syn
 
 # move status line to top
 #set -g status-position top
+
+
+# -- plugins -------------------------------------------------------
+run -b '~/dotfiles/tmux/tpm/tpm'
+
+set -g @tpm_plugins '          \
+  tmux-plugins/tpm             \
+  tmux-plugins/tmux-resurrect  \
+'

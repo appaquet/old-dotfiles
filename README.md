@@ -142,6 +142,12 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
   * `<ctrl>b <enter>` to enter copy mode, and then escape to exit
   * `<ctrl>b <enter>` to enter copy mode, and then escape to exit
   * `<ctrl>b <alt><arrows>` to resize pane
+  * `<ctrl>b [` to get into copy mode, `v` for visual selection, `r` for rectangle selection and `y` to yank
+
+* Plugins  
+  * [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
+    * `<ctrl>b <ctrl>s` to save current layout
+    * `<ctrl>b <ctrl>r` to ressurect last saved layout
 
 * For more shorcuts, see [here](https://github.com/gpakosz/.tmux)
 
