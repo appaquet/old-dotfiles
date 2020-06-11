@@ -42,6 +42,7 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
    * I use [Gpakosz](https://github.com/gpakosz/.tmux) self-contained tmux configuration, which is checked out as a submodule.
    * Symlink main tmux config: `ln -s ./dotfiles/tmux/gpakosz_tmux/.tmux.conf ~/.tmux.conf`
    * Symlink personalized conf: `ln -s ./dotfiles/tmux/tmux.conf.local ~/.tmux.conf.local`
+   * Install plugins by launching tmux and pressing: `ctrl-b shift-i`
 
 * [Autojump](https://github.com/wting/autojump) (Fast jumping to directories)
   * To install
@@ -139,10 +140,12 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
   * `<ctrl>b <ctrl>l` to navigate to next window
   * `<ctrl>b <ctrl>h` to navigate to prev window
   * `<ctrl>b <tab>` to navigate to last window
-  * `<ctrl>b <enter>` to enter copy mode, and then escape to exit
-  * `<ctrl>b <enter>` to enter copy mode, and then escape to exit
   * `<ctrl>b <alt><arrows>` to resize pane
-  * `<ctrl>b [` to get into copy mode, `v` for visual selection, `r` for rectangle selection and `y` to yank
+  * `<ctrl>b <enter>` to get into copy mode
+    * `v` for selection 
+    * `ctrl-v` to switch between between block and line selection 
+    * `y` to yank
+    * `H` and `L` start line / end line
 
 * Plugins  
   * [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
