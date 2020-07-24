@@ -74,6 +74,9 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
     * Ubuntu: `cargo install bandwhich`
     * MacOS: `brew install bandwhich`
 
+* [Dua](https://github.com/Byron/dua-cli) (Disk usage / cleanup)
+  * To install: `cargo install dua-cli`
+
 * [Alacritty](https://github.com/jwilm/alacritty) (A GPU accelared terminal written in Rust)
   * Main advantage of Alacritty is it's cross platform and configurable via a configuration file
   * To install:
@@ -146,13 +149,14 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
     * `ctrl-v` to switch between between block and line selection 
     * `y` to yank
     * `H` and `L` start line / end line
+  * `<ctrl>b q` to show pane ids, then `:swap-pane -s X -t Y` to swap
+
+* For more shorcuts, see [here](https://github.com/gpakosz/.tmux)
 
 * Plugins  
   * [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
     * `<ctrl>b <ctrl>s` to save current layout
     * `<ctrl>b <ctrl>r` to ressurect last saved layout
-
-* For more shorcuts, see [here](https://github.com/gpakosz/.tmux)
 
 ### Autojump
 * In shell
@@ -163,6 +167,7 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
 ### Ripgrep
 * In shell
   * `rg <pattern>` to find any files that contain the given pattern
+  * `vimrg <pattern>` to open matching files in vim + highlight matches
 * In vim
   * `Rg <pattern>` to ripgrep the given pattern
   * `<leader>r` to ripgrep the current word

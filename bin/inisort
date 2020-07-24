@@ -15,10 +15,30 @@ for line in sys.stdin:
         if line != '':
             sections[current_section].append(line)
 
+exclude_sections = [
+    'deja-dup',
+    'desktop/notifications',
+    'desktop/background',
+    'desktop/screensaver',
+    'window-state',
+    'remote-access',
+    'app-folders',
+    'file-roller',
+]
+
 sorted_keys = sorted(sections.keys())
-for key in sorted_keys:
-    lines = sorted(sections[key])
-    print("\n%s" % key)
+for section_name in sorted_keys:
+    exclude_section = False
+    for exclude in exclude_sections:
+        if exclude in section_name:
+            exclude_section = True
+            break
+
+    if exclude_section:
+        continue
+
+    lines = sorted(sections[section_name])
+    print("\n%s" % section_name)
     for line in lines:
         print(line)
     

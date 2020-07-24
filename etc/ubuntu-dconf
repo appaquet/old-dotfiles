@@ -1,5 +1,4 @@
 
-
 [desktop/input-sources]
 mru-sources=[('xkb', 'us'), ('xkb', 'ca+multix')]
 per-window=true
@@ -110,12 +109,32 @@ shortcut=['<Super>q']
 
 [shell/extensions/system-monitor]
 battery-hidesystem=false
+center-display=false
 compact-display=false
+disk-display=true
+disk-show-menu=true
+disk-show-text=true
+disk-usage-style='bar'
 fan-sensor-file='/sys/class/hwmon/hwmon1/fan1_input'
+fan-show-menu=false
+fan-show-text=false
+gpu-display=false
+gpu-show-menu=false
+gpu-show-text=false
 icon-display=true
+memory-display=true
+memory-show-text=true
+memory-style='graph'
+move-clock=false
 net-display=true
 net-show-menu=true
 net-show-text=true
+net-style='graph'
+show-tooltip=false
+thermal-display=true
+thermal-sensor-file='/sys/class/hwmon/hwmon2/temp1_input'
+thermal-show-text=false
+thermal-style='digit'
 
 [shell/keybindings]
 switch-to-application-1=@as []
@@ -130,4 +149,3 @@ switch-to-application-9=@as []
 
 [system/location]
 enabled=false
-

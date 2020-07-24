@@ -194,7 +194,9 @@ endfunction
   ""     -> Ripgrep wrapper
   ""
     Plugin 'jremmen/vim-ripgrep'
+    let g:rg_highlight = 1
     map <Leader>r :Rg <cword><CR>
+
 
   ""
   "" YouCompleteMe
@@ -271,9 +273,6 @@ endfunction
   ""
     Plugin 'vim-scripts/Rename2'
 
-
-  "" Rust
-  Plugin 'rust-lang/rust.vim'
 
   ""
   "" DelimitMat

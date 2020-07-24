@@ -32,7 +32,7 @@ fi
 
 confirm "Load gnome settings?"
 if [[ "$ret" == "true" ]]; then
-  # To dump: dconf dump /org/gnome/ | $DOTFILES/bin/inisort > ./etc/ubuntu-dconf
+  # To dump: dconf dump /org/gnome/ | $DOTFILES/bin/inisort > $DOTFILES/etc/ubuntu-dconf
   # Then cleanup unnecessary stuff
   dconf load /org/gnome/ < ./etc/ubuntu-dconf
 fi

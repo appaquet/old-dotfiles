@@ -13,11 +13,14 @@
 - [Emoji selector](https://extensions.gnome.org/extension/1162/emoji-selector/)
 
 ## Alacritty
-- See https://github.com/jwilm/alacritty, follow Pop!_OS instructions
+- See https://github.com/jwilm/alacritty, install using deb
 - Then `apt install alacritty`
 
 ## Synergy
 - https://symless.com/synergy
+
+## Node
+- https://github.com/nodesource/distributions/blob/master/README.md#debinstall
 
 ## Misc
 - [CLion / IntelliJ keyboard shortcut fix](https://askubuntu.com/questions/412046/unable-to-use-intellij-idea-keyboard-shortcuts-on-ubuntu/738479)

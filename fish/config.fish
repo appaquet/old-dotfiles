@@ -26,13 +26,18 @@ abbr gca 'git commit --amend'
 abbr gr 'git rev-parse --short @'
 abbr gb 'git for-each-ref --sort=-committerdate refs/heads/ --format="%(color: red)%(committerdate:short) %(color: 244)-- %(color: cyan)%(refname:short) %(color: 244)-- %(color: green)%(subject)"'
 
+# ripgrep & open files in vim
+function vimrg
+  vim -c "execute \"Rg $argv\n\"" (rg -l "$argv")
+end
+
 # fzf
 function fish_user_key_bindings
   fzf_key_bindings
 end
 
-# Theme
-set -g theme_color_scheme base16-dark
+# Theme (`bobthefish_display_colors --all` to preview them)
+set -g theme_color_scheme base16
 
 # Source local configuration
 [ -f ~/.config/fish/local.fish ]; and source ~/.config/fish/local.fish
