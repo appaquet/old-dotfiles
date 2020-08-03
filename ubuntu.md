@@ -13,8 +13,7 @@
 - [Emoji selector](https://extensions.gnome.org/extension/1162/emoji-selector/)
 
 ## Alacritty
-- See https://github.com/jwilm/alacritty, install using deb
-- Then `apt install alacritty`
+- Install via https://launchpad.net/~mmstick76/+archive/ubuntu/alacritty
 
 ## Synergy
 - https://symless.com/synergy
