@@ -22,6 +22,10 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
 
   * **Notes**
     * You can still use your `~/.profile` as you would do in bash thanks to the `foreign-env` plugin that sources your `~/.profile`
+      * You should not change PATHs from ~/.profile. Use fish persisted PATH instead.
+      * To add a path: `set -Ua fish_user_paths /some/new/path`
+      * To list current paths: `echo $fish_user_paths | tr " " "\n" | nl`
+      * TO remove a path: `set --erase PATH[NUMBER AS LISTED STARTING AT 1]`
     * You can put any local specifc fish config in `~/.config/fish/local.fish`
 
 * [fzf](https://github.com/junegunn/fzf) (shell fuzzy shell history finder & fuzzy file finder)
