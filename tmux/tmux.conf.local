@@ -297,6 +297,12 @@ bind e setw synchronize-panes\; display-message "Synchronized pane is now #{?syn
 #set -g status-position top
 
 
+# Pane status
+set -wg pane-border-status top
+#set -wg pane-border-format "#[bold,fg=#dddddd,bg=#009aff]#{=-80:pane_current_path}"
+set -wg pane-border-format "#{pane_index} #{pane_current_command} #T"
+
+
 # -- plugins -------------------------------------------------------
 run -b '~/dotfiles/tmux/tpm/tpm'
 
