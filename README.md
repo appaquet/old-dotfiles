@@ -67,6 +67,7 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
     * MacOS: `brew install git-delta`
   * Install in git:
     * `git config --global core.pager "delta --dark"  # --light for light terminal backgrounds`
+    * Change theme to [this one](https://github.com/dandavison/delta#side-by-side-view-1)
 
 * [Bottom](https://github.com/ClementTsang/bottom) (Htop alternative with disk + network)
   * To install
@@ -84,7 +85,8 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
 * [Alacritty](https://github.com/jwilm/alacritty) (A GPU accelared terminal written in Rust)
   * Main advantage of Alacritty is it's cross platform and configurable via a configuration file
   * To install:
-    * Follow instructions on GitHub
+    * MacOS: Use released dmg from repo
+    * Ubuntu: Manually install from [Pop!_OS package](https://launchpad.net/~system76/+archive/ubuntu/pop/+packages?field.name_filter=alacritty&field.status_filter=published&field.series_filter=focal)
     * Install patched fonts
       * `cd fonts; ./install.sh`
     * Symlink config folder: `mkdir -p ~/.config/alacritty/; ln -s ~/dotfiles/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml`
@@ -104,6 +106,7 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
 * With no input `<alt><left>` or `<alt><right>` to jump to previous directory in history
 * With input `<alt><left>` or `<alt><right>` to between words
 * With input `<ctl>w` to delete previous word
+* With input `<alt>e` to open input in editor
 
 ### Neovim
 * My leader key is bound to `\` (backslash)

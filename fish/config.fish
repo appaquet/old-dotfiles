@@ -1,3 +1,5 @@
+# Put fish in vi mode
+fish_vi_key_bindings
 
 # Source ~/.profile 
 fenv source ~/.profile

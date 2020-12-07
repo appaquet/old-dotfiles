@@ -44,9 +44,9 @@ fi
 if [[ "$WAY" == "out" ]]; then
   echo "$LOCAL_NAME --> $REMOTE_NAME"
   set -x
-  rsync -av $EXCLUDES $RSYNC_EXTRA $CURRENT_DIR $REMOTE_IP:$REMOTE_PATH/../
+  rsync -av --progress $EXCLUDES $RSYNC_EXTRA $CURRENT_DIR $REMOTE_IP:$REMOTE_PATH/../
 else
   echo "$LOCAL_NAME <-- $REMOTE_NAME"
   set -x
-  rsync -av $EXCLUDES $RSYNC_EXTRA $REMOTE_IP:$REMOTE_PATH $CURRENT_DIR/../
+  rsync -av --progress $EXCLUDES $RSYNC_EXTRA $REMOTE_IP:$REMOTE_PATH $CURRENT_DIR/../
 fi
