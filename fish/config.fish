@@ -41,3 +41,9 @@ set -g theme_color_scheme base16
 
 # Source local configuration
 [ -f ~/.config/fish/local.fish ]; and source ~/.config/fish/local.fish
+
+# Fixes macOS slow tab completion
+# See https://github.com/fish-shell/fish-shell/issues/6270
+if test (uname) = Darwin
+  function __fish_describe_command; end
+end
