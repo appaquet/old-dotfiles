@@ -42,7 +42,7 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
      * `cd ~/.vim/bundle/YouCompleteMe`
      * `./install.py`
 
-* [Tmux](https://github.com/tmux/tmux)
+* [tmux](https://github.com/tmux/tmux)
    * I use [Gpakosz](https://github.com/gpakosz/.tmux) self-contained tmux configuration, which is checked out as a submodule.
    * Symlink main tmux config: `ln -s ./dotfiles/tmux/gpakosz_tmux/.tmux.conf ~/.tmux.conf`
    * Symlink personalized conf: `ln -s ./dotfiles/tmux/tmux.conf.local ~/.tmux.conf.local`
@@ -61,6 +61,9 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
     * Ubuntu: `sudo apt install ripgrep`
     * MacOS: `brew install ripgrep`
 
+* [bat](https://github.com/sharkdp/bat) (A `cat` replacement with syntax highlighting & git integration)
+  * To install: `cargo install bat`
+
 * [Git-delta](https://crates.io/crates/git-delta) (Much better git diff)
   * To install
     * Ubuntu: `cargo install git-delta`
@@ -68,6 +71,7 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
   * Install in git:
     * `git config --global core.pager "delta --dark"  # --light for light terminal backgrounds`
     * Change theme to [this one](https://github.com/dandavison/delta#side-by-side-view-1)
+    * `git config --global delta.navigate true` to allow navigation using `n` for next file, and `Shift-N` for previous file
 
 * [Bottom](https://github.com/ClementTsang/bottom) (Htop alternative with disk + network)
   * To install
@@ -75,9 +79,7 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
     * MacOS: `brew install clementtsang/bottom/bottom`
 
 * [Bandwhich](https://github.com/imsnif/bandwhich) (Network monitoring / top like by process/hosts)
-  * To install
-    * Ubuntu: `cargo install bandwhich`
-    * MacOS: `brew install bandwhich`
+  * To install: `cargo install bandwhich`
 
 * [Dua](https://github.com/Byron/dua-cli) (Disk usage / cleanup)
   * To install: `cargo install dua-cli`

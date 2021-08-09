@@ -13,6 +13,7 @@ set -x PATH ~/bin ~/dotfiles/bin $PATH
 alias l 'ls'
 alias vim 'nvim'
 alias vi 'nvim'
+alias k 'kubectl'
 
 abbr jql 'jq -C . | less --raw'
 abbr gs 'git status'
@@ -27,6 +28,10 @@ abbr gpr 'git pull --rebase --autostash '
 abbr gca 'git commit --amend'
 abbr gr 'git rev-parse --short @'
 abbr gb 'git for-each-ref --sort=-committerdate refs/heads/ --format="%(color: red)%(committerdate:short) %(color: 244)-- %(color: cyan)%(refname:short) %(color: 244)-- %(color: green)%(subject)"'
+
+
+abbr kgetall 'kubectl api-resources --verbs=list --namespaced -o name | xargs -n 1 kubectl get --show-kind --ignore-not-found -n '
+
 
 # ripgrep & open files in vim
 function vimrg
