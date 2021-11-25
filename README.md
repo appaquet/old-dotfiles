@@ -11,7 +11,7 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
     * MacOS: `brew install fish` and follow instructions about adding fish to `/etc/shells`
   * Change your shell
     * Ubuntu: `chsh -s /usr/bin/fish`
-    * MacOS: `chsh -s /usr/local/bin/fish`
+    * MacOS: `chsh -s /opt/homebrew/bin/fish` (you may have to add it to /etc/shells for MacOS to accept to install)
   * Symlink fish's config folder: `mkdir -p ~/.config/fish/ && ln -s ~/dotfiles/fish/config.fish ~/.config/fish/`
   * Log out and log back (you'll get errors as not everyhing is setup yet)
   * Install oh-my-fish framework
@@ -70,8 +70,8 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
     * MacOS: `brew install git-delta`
   * Install in git:
     * `git config --global core.pager "delta --dark"  # --light for light terminal backgrounds`
-    * Change theme to [this one](https://github.com/dandavison/delta#side-by-side-view-1)
     * `git config --global delta.navigate true` to allow navigation using `n` for next file, and `Shift-N` for previous file
+    * Change theme to [this one](https://github.com/dandavison/delta#side-by-side-view-1) (`vim ~/.gitconfig`)
 
 * [Bottom](https://github.com/ClementTsang/bottom) (Htop alternative with disk + network)
   * To install
@@ -83,11 +83,13 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
 
 * [Dua](https://github.com/Byron/dua-cli) (Disk usage / cleanup)
   * To install: `cargo install dua-cli`
+  * To use: `dua interactive`
 
 * [Alacritty](https://github.com/jwilm/alacritty) (A GPU accelared terminal written in Rust)
   * Main advantage of Alacritty is it's cross platform and configurable via a configuration file
   * To install:
     * MacOS: Use released dmg from repo
+      * Install fonts from `fonts` (FiraMono)
     * Ubuntu: Manually install from [Pop!_OS package](https://launchpad.net/~system76/+archive/ubuntu/pop/+packages?field.name_filter=alacritty&field.status_filter=published&field.series_filter=focal)
     * Install patched fonts
       * `cd fonts; ./install.sh`
@@ -97,7 +99,9 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
   * Symlink vim config: `ln -sf ~/dotfiles/idea/.ideavimrc ~/.ideavimrc`
 
 * Utils
-  * Add to your `~/.profile`: `PATH="$HOME/dotfiles/bin:$PATH"`
+  * Add `bin` to path: 
+    * `fish_add_path /Users/appaquet/dotfiles/bin`
+    * or via `~/.profile`: `PATH="$HOME/dotfiles/bin:$PATH"`
 
 ## Other setup
 * [Rust](rust.md)
