@@ -53,7 +53,7 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
     * Ubuntu: `sudo apt install autojump`
     * MacOS: `brew install autojump`
   * You can add the bootstrap script to your `~/.config/fish/local.fish`
-    * MacOS: `[ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish`
+    * MacOS: `[ -f /opt/homebrew/share/autojump/autojump.fish ]; and source /opt/homebrew/share/autojump/autojump.fish`
     * Ubuntu: `[ -f /usr/share/autojump/autojump.fish ]; and source /usr/share/autojump/autojump.fish`
 
 * [RipGrep](https://github.com/BurntSushi/ripgrep) (A very fast grep / ack replacement)
@@ -85,7 +85,22 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
   * To install: `cargo install dua-cli`
   * To use: `dua interactive`
 
-* [Alacritty](https://github.com/jwilm/alacritty) (A GPU accelared terminal written in Rust)
+* [asdf](https://github.com/asdf-vm/asdf)
+  * Checkout asdf: `git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.1`
+  * Then add `source ~/.asdf/asdf.fish` to `~/.config/fish/local.fish`
+  * Configure completions: `mkdir -p ~/.config/fish/completions; and ln -s ~/.asdf/completions/asdf.fish ~/.config/fish/completions`
+  * May need to install for zsh too to make it work in vscode
+    * Add `. $HOME/.asdf/asdf.sh` to `~/.zshrc`
+  * Quick usage
+    * Install nodejs: `asdf plugin-add nodejs`
+    * List all versions of nodejs: `asdf list all nodejs`
+    * Install a version: `asdf install nodejs 12.22.1` or `asdf install nodejs latest`
+    * List install versions: `asdf list nodejs`
+    * Use version in directory: `asdf local nodejs 12.22.1`
+    * Use version globally: `asdf global nodejs latest`
+  * [All commands](http://asdf-vm.com/manage/commands.html)
+
+* [Alacritty](https://github.com/jwilm/alacritty) (A GPU accelerated terminal written in Rust)
   * Main advantage of Alacritty is it's cross platform and configurable via a configuration file
   * To install:
     * MacOS: Use released dmg from repo
