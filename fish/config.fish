@@ -24,9 +24,9 @@ abbr gp 'git pull'
 abbr gck 'git checkout'
 abbr gcm 'git commit -m'
 abbr gpom 'git pull origin master'
-abbr gpr 'git pull --rebase --autostash '
+abbr gpr 'git pull --rebase --autostash'
 abbr gca 'git commit --amend'
-abbr gr 'git rev-parse --short @'
+abbr gr 'git rev-parse --short=7 @'
 abbr gb 'git for-each-ref --sort=-committerdate refs/heads/ --format="%(color: red)%(committerdate:short) %(color: 244)-- %(color: cyan)%(refname:short) %(color: 244)-- %(color: green)%(subject)"'
 
 
