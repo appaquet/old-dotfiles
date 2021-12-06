@@ -39,6 +39,9 @@ if [[ -f ".psync_ignore" ]]; then
   for pattern in `cat .psync_ignore`; do
     EXCLUDES="$EXCLUDES --exclude=$pattern"
   done
+else
+  echo "No .psync_ignore file in current directory."
+  exit 1
 fi
 
 if [[ "$WAY" == "out" ]]; then

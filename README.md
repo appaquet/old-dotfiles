@@ -25,7 +25,7 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
       * You should not change PATHs from ~/.profile. Use fish persisted PATH instead.
       * To add a path: `set -Ua fish_user_paths /some/new/path`
       * To list current paths: `echo $fish_user_paths | tr " " "\n" | nl`
-      * TO remove a path: `set --erase PATH[NUMBER AS LISTED STARTING AT 1]`
+      * TO remove a path: `set --erase fish_user_paths[NUMBER AS LISTED STARTING AT 1]`
     * You can put any local specifc fish config in `~/.config/fish/local.fish`
 
 * [fzf](https://github.com/junegunn/fzf) (shell fuzzy shell history finder & fuzzy file finder)
