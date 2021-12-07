@@ -191,6 +191,7 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
   * `j somefolder` to jump to a folder that contains somefolder that you cd'ed to previously
   * `jc somefolder` to jump to a child folder
   * `jo [folder]` to jump to a folder using the system's file manager
+  * `<alt>left/right arrow` to navigate between previous parent / child
 
 ### Ripgrep
 * In shell
