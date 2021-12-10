@@ -37,10 +37,12 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
      * Make sure to update alternatives on Ubuntu
      * On MacOS, you may need to install [python neovim](https://ricostacruz.com/til/neovim-with-python-on-osx): `pip3 install neovim --upgrade`
    * Symlink config folder: `ln -s ~/dotfiles/nvim ~/.config/nvim`
+   * Install neovim python package (`pip3 install pynvim`)
    * Install plugins `nvim +BundleInstall +qall`
    * Finish YouCompleteMe plugin installation
      * `cd ~/.vim/bundle/YouCompleteMe`
      * `./install.py`
+   * To diagnose issues, run `:healthcheck`
 
 * [tmux](https://github.com/tmux/tmux)
    * I use [Gpakosz](https://github.com/gpakosz/.tmux) self-contained tmux configuration, which is checked out as a submodule.
