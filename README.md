@@ -80,6 +80,10 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
     * Ubuntu: `cargo install bottom`
     * MacOS: `brew install clementtsang/bottom/bottom`
 
+* [jless](https://pauljuliusmartinez.github.io/) (jq + less with foldable sections)
+  * To install
+    * Ubuntu & MacOS: `cargo install jless`
+
 * [Bandwhich](https://github.com/imsnif/bandwhich) (Network monitoring / top like by process/hosts)
   * To install: `cargo install bandwhich`
 
@@ -172,8 +176,10 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
   * `<ctrl>b m` to toggle mouse support (useful to allow select + copy)
   * `<ctrl>b <ctrl>l` to navigate to next window
   * `<ctrl>b <ctrl>h` to navigate to prev window
+  * `<ctrl>b Tab` to navigate to last window
   * `<ctrl>b <tab>` to navigate to last window
   * `<ctrl>b <alt><arrows>` to resize pane
+  * `<ctrl>b r` to reload config
   * `<ctrl>b <enter>` to get into copy mode
     * `v` for selection 
     * `ctrl-v` to switch between between block and line selection 
