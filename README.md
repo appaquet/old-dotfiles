@@ -190,6 +190,10 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
 * For more shorcuts, see [here](https://github.com/gpakosz/.tmux)
 
 * Plugins  
+  * [tmux plugin manager](https://github.com/tmux-plugins/tpm)
+    * See tmux/tmux.conf.local for how to add plugin, and then ctrl-b shift-i to install
+    * To update plugins: ctrl-b u
+
   * [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
     * `<ctrl>b <ctrl>s` to save current layout
     * `<ctrl>b <ctrl>r` to ressurect last saved layout

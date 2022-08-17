@@ -30,7 +30,9 @@ abbr gca 'git commit --amend'
 abbr gr 'git rev-parse --short=7 @'
 abbr gb 'git for-each-ref --sort=-committerdate refs/heads/ --format="%(color: red)%(committerdate:short) %(color: 244)-- %(color: cyan)%(refname:short) %(color: 244)-- %(color: green)%(subject)"'
 abbr grsw 'git restore --staged --worktree'
+abbr grws 'git restore --staged --worktree'
 abbr grs 'git restore --staged'
+abbr ghpr 'gh pr create --draft --body "" --title'
 
 
 abbr kgetall 'kubectl api-resources --verbs=list --namespaced -o name | xargs -n 1 kubectl get --show-kind --ignore-not-found -n '
