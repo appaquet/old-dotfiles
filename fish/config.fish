@@ -34,7 +34,6 @@ abbr grws 'git restore --staged --worktree'
 abbr grs 'git restore --staged'
 abbr ghpr 'gh pr create --draft --body "" --title'
 
-
 abbr kgetall 'kubectl api-resources --verbs=list --namespaced -o name | xargs -n 1 kubectl get --show-kind --ignore-not-found -n '
 
 

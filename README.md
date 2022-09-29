@@ -91,6 +91,9 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
   * To install: `cargo install dua-cli`
   * To use: `dua interactive`
 
+* [tldr](https://tldr.sh/) (Manpage replacement)
+  * To install: `apt install tldr` or `brew install tldr`
+
 * [asdf](https://github.com/asdf-vm/asdf)
   * Checkout asdf: `git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.1`
   * Then add `source ~/.asdf/asdf.fish` to `~/.config/fish/local.fish`
