@@ -82,6 +82,7 @@ New version of my old [dotfiles](https://github.com/appaquet/app-vim)
 
 * [jless](https://pauljuliusmartinez.github.io/) (jq + less with foldable sections)
   * To install
+    * Install dependencies: `sudo apt-get install libxcb1-dev libxcb-render0-dev libxcb-shape0-dev libxcb-xfixes0-dev`
     * Ubuntu & MacOS: `cargo install jless`
 
 * [Bandwhich](https://github.com/imsnif/bandwhich) (Network monitoring / top like by process/hosts)
