@@ -1,5 +1,6 @@
+# Moved to <https://github.com/appaquet/dotfiles>, managed with nix
+
 # appaquet's dotfiles
-New version of my old [dotfiles](https://github.com/appaquet/app-vim)
 
 ## Shell & editor setup
 * Checkout this repo recursively in your ~/
